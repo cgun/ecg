@@ -1,0 +1,69 @@
+{% extends "layout.html" %}
+
+{% block content %}
+            <div id="content"  ><center>
+                <form method="post" action="{{ url_for('ecg') }}">
+                  <table>
+                  <tr>
+                  <td><label for="url">ECG URL:</label></td>
+                  <td><input type="text" name="url"  size="100"/></td>
+                  </tr>
+                  <tr>
+                  <td><label for="sr">Sampling Rate(Hz):</label></td>
+                  <td><input type="text" name="sr"  size="20" value="500" style="width: 55px"/></td>
+                  </tr>
+                  </table>
+
+
+
+                    <em>The signal may take 10-30s for processing</em><br />
+                  <input type="submit" value="Submit" onclick="this.form.submit();this.disabled = true; this.value = 'Processing';"/>
+                </form>
+
+
+</br>
+</br>
+<b> Some of recorded MobilMed ECG data</b>
+
+            <ol>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-10-33-47.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-10-38-18.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-10-41-43.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-10-49-28.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-10-52-00.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-11-09-12.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-11-12-10.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-11-15-09.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-11-23-37.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-11-28-48.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-11-33-18.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-11-42-48.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-11-47-14.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-11-56-31.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-12-04-02.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-12-08-56.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-12-14-12.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-12-17-48.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-12-20-45.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-12-29-08.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-12-33-53.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-13-02-25.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-13-24-46.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-13-49-00.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-14-05-21.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-14-12-34.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-14-16-02.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-14-23-18.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-14-36-11.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-14-39-53.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-14-42-52.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-14-48-08.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-14-50-51.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-14-55-42.txt	</li>
+<li>	https://raw.githubusercontent.com/Mavrikant/MobilMed-ECG-Data/master/2016-10-26-15-04-26.txt	</li>
+</ol>
+</center>
+</div>
+
+
+{% endblock %}
